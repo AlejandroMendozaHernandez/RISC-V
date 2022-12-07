@@ -1,0 +1,88 @@
+.form-control
+{
+    background-color: transparent;
+    width: 200px;
+    height: 220px;
+    perspective: 1000px;
+    color: black;
+    margin: 0 10px;
+}
+
+#titulo_contenedor{
+    margin: 1ch 1ch 0ch 1ch;
+    display: grid;
+    width:fit-content;
+    margin: 0 auto;
+}
+
+#titulo_box{
+    font-size:x-large;
+    width: max-content;
+}
+
+#codigoenensamblador:focus-visible {
+    outline:none;
+}
+
+.salida
+{
+    color: black;
+    margin: 0 40px;
+}
+
+body {
+    font-family: 'IBM Plex Mono', monospace;
+
+    height: 100vh;
+    margin: 0 auto;
+
+    display:contents;
+    gap: 5ch;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--color-fg);
+    background-color:rgb(80, 231, 193);
+}
+
+#entrada {
+    width: 230px;
+    margin: 0 auto;
+}
+
+#salida {
+    width:fit-content;
+    margin: 0 auto;
+}
+
+#boton1 {
+    width:fit-content;
+    margin: 0 auto;
+}
+
+#boton2 {
+    width:fit-content;
+    margin: 0 auto;
+}
+
+button
+{
+    font-size: 20px;
+    color: black;
+    background-color:rgb(173, 252, 232);
+    border: 1px solid black;
+    border-radius: 18px;
+    padding: 6px 16px;
+    transition: .5s;
+    width: 160px;
+    margin: 0 auto;
+}
+button:hover
+{
+    color: rgb(52, 122, 19);
+}
+.borrar
+{
+    display: inline-block;
+    margin: 0 10px;
+}

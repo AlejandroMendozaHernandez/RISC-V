@@ -1,0 +1,20 @@
+    addi x10, x0, 6
+    fibo:
+    beq x10,x0,done
+    addi x5,x0,1
+    beq x10,x5,done
+    addi x2,x2,-16
+    sd x1,0(x2)
+    sd x10,8(x2)
+    add x10,x10,-1
+    jal x1,fib
+    ld x5,8(x2)
+    sd x10,8(x2)
+    addi x10,x5,-2
+    jal x1,fib
+    ld x5,8(x2)
+    add x10,x10,x5
+    ld x1,0(x2)
+    addi x2,x2,16
+    done:
+    jalr x0,0(x1)

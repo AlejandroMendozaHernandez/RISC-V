@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RISC-V</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="titulo_contenedor">
+            <p></p>
+            <div id="titulo_box">[TRADUCTOR DE INTRUCCIONES RISC-V]</div>
+            <p></p>
+        </div>
+        <div id="entrada">
+            <textarea type="text" id="codigoensamblador" cols="30" rows="10" class="form-control" placeholder="Código en ensamblador" style="font-size: medium"></textarea>
+        </div>
+        <p></p>
+        <div id="boton1">
+            <button onclick="obtenerCodigo()">Traducir</button>
+        </div>
+        <p></p>
+        <div id="boton2">
+            <button type="reset" onclick="borrar()">Eliminar</button>
+        </div>
+        <p style="text-align:center">Los resultados serán mostrados a continuación: </p>
+        <p style="text-align:center">|</p>
+        <p style="text-align:center">v</p>
+        <div 
+            id="salida" class="salida"> 
+        </div>
+
+        <script src="traductor.js" type="text/javascript"></script>
+    </body>
+</html>
