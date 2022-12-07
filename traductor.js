@@ -154,7 +154,7 @@ function mainPrincipal(CadenadeEntradamain)
         console.log('pos2',inmediato.toString().slice(9,20));
         console.log('pos3',inmediato.toString().slice(10,11));
         console.log('pos4',inmediato.toString().slice(2,10));
-        const risc_v_binario = inmediato.toString().slice(0,1) + inmediato.toString().slice(9,20) + inmediato.toString().slice(2,10)  + rd+ opcode;
+        const risc_v_binario = inmediato.toString().slice(0,1) + inmediato.toString().slice(2,10) + inmediato.toString().slice(9,20)  + rd+ opcode;
         console.log(risc_v_binario);
         escribir(risc_v_binario, CadenadeEntradamain);
     }else{
